@@ -1,0 +1,129 @@
+{
+  "event": {
+    "id": "e1000000-0000-4000-8000-000000000001",
+    "city": "Colombo",
+    "tags": [
+      "ai",
+      "climate",
+      "python",
+      "civic tech"
+    ],
+    "title": "Climate AI Hackathon",
+    "agenda": [
+      {
+        "title": "Check-in and breakfast",
+        "detail": "Collect your badge at the main entrance.",
+        "ends_at": "2026-10-11T09:30:00+05:30",
+        "starts_at": "2026-10-11T08:30:00+05:30"
+      },
+      {
+        "title": "Problem statements",
+        "detail": "Briefings from climate researchers.",
+        "ends_at": "2026-10-11T10:30:00+05:30",
+        "starts_at": "2026-10-11T09:30:00+05:30"
+      },
+      {
+        "title": "Build sprint",
+        "detail": "Mentor office hours every three hours.",
+        "ends_at": "2026-10-12T16:30:00+05:30",
+        "starts_at": "2026-10-11T10:30:00+05:30"
+      },
+      {
+        "title": "Demos and awards",
+        "detail": "Three-minute demos for each team.",
+        "ends_at": "2026-10-12T20:30:00+05:30",
+        "starts_at": "2026-10-12T17:30:00+05:30"
+      }
+    ],
+    "format": "physical",
+    "status": "published",
+    "ends_at": "2026-10-12T15:00:00+00:00",
+    "is_free": true,
+    "summary": "Thirty-six hours to build tools for flood and heat resilience",
+    "capacity": 240,
+    "currency": "LKR",
+    "district": "Colombo",
+    "latitude": 6.9022,
+    "speakers": [
+      {
+        "name": "Dr. Ishara Gunawardena",
+        "role": "Climate data scientist",
+        "organization": "Sample Research Lab"
+      },
+      {
+        "name": "Ravindu Jayasinghe",
+        "role": "Civic tech lead",
+        "organization": "Colombo Builders Collective"
+      }
+    ],
+    "cover_alt": "Abstract painting of rain clouds over green terraces in deep teal and amber",
+    "longitude": 79.853,
+    "starts_at": "2026-10-11T03:00:00+00:00",
+    "cover_path": "seed/climate-ai-hackathon.jpg",
+    "online_url": null,
+    "university": null,
+    "venue_name": "Innovation Hall",
+    "category_id": "hackathons",
+    "description": "Teams of up to four build working prototypes that help Sri Lankan communities prepare for floods, landslides and extreme heat. Mentors from climate research, civic tech and design join throughout the weekend. Meals, Wi-Fi and sleeping space are provided. Bring a laptop, a charger and an open mind.",
+    "seats_taken": 168,
+    "address_line": "Galle Road, Colombo 03",
+    "organizer_id": "6f1d0a3e-1c2b-4d5e-8f90-0a1b2c3d4e01",
+    "published_at": "2026-09-22T15:45:50.244207+00:00",
+    "category_name": "Hackathons",
+    "refund_policy": "Free registration. Please cancel at least 24 hours before the start so your seat can go to someone on the waitlist.",
+    "organizer_name": "Colombo Builders Collective",
+    "organizer_slug": "colombo-builders",
+    "min_price_minor": null,
+    "seats_remaining": 72,
+    "registration_open": true,
+    "organizer_verified": true,
+    "registration_opens_at": null,
+    "registration_closes_at": "2026-10-12T15:00:00+00:00"
+  },
+  "media": [
+    {
+      "kind": "cover",
+      "alt_text": "Abstract painting of rain clouds over green terraces in deep teal and amber",
+      "storage_path": "seed/climate-ai-hackathon.jpg"
+    }
+  ],
+  "tiers": [],
+  "viewer": {
+    "is_saved": false,
+    "waitlisted": false,
+    "is_organizer": false,
+    "registration_id": null,
+    "offer_expires_at": null,
+    "waitlist_position": null,
+    "registration_status": null
+  },
+  "questions": [
+    {
+      "id": "4348cac3-2824-5701-8d12-e6fa95140eff",
+      "kind": "short_text",
+      "prompt": "Team name (optional)",
+      "options": [],
+      "required": false
+    },
+    {
+      "id": "d9d358bb-3e71-568e-a180-afe535e300d1",
+      "kind": "single_choice",
+      "prompt": "Primary skill",
+      "options": [
+        "Software",
+        "Data",
+        "Design",
+        "Hardware",
+        "Domain expert"
+      ],
+      "required": true
+    },
+    {
+      "id": "c354e419-4863-5162-90ea-f8171db1b667",
+      "kind": "yes_no",
+      "prompt": "Do you need overnight accommodation?",
+      "options": [],
+      "required": true
+    }
+  ]
+}

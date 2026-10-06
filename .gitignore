@@ -1,0 +1,31 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.moved-aside
+.swiftpm/
+.build/
+
+# Generated project is reproducible from project.yml but is committed for convenience.
+# Remove the next line to stop committing it.
+# Zuno.xcodeproj/
+
+# Tools downloaded by scripts/bootstrap.sh
+.tools/
+
+# Secrets — never commit
+Config/Secrets.*.xcconfig
+!Config/Secrets.example.xcconfig
+supabase/.env
+supabase/functions/.env
+supabase/.temp/
+supabase/.branches/
+*.p8
+*.p12
+*.mobileprovision
+
+# Local verification artefacts
+artifacts/screenshots/raw/
+.DS_Store

@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Junior Cricket Clinic",
+    "paid_at": null,
+    "currency": "LKR",
+    "event_id": "e1000000-0000-4000-8000-000000000014",
+    "net_minor": 0,
+    "starts_at": "2026-10-16T02:30:00+00:00",
+    "gross_minor": 0,
+    "event_status": "published",
+    "payout_status": "unsettled",
+    "scheduled_for": null,
+    "commission_minor": 0
+  }
+]

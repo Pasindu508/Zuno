@@ -1,0 +1,8 @@
+# Supabase CLI
+.branches
+.temp
+# Local secrets - never commit (see functions/.env.example for the variable list)
+.env
+.env.*
+*.env
+!functions/.env.example

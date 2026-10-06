@@ -1,0 +1,14 @@
+// Zuno — shared build settings. Values here are safe, non-secret defaults.
+// Per-developer and per-environment values go in the git-ignored
+// Config/Secrets.<Environment>.xcconfig files (see Config/Secrets.example.xcconfig).
+// xcconfig treats `//` as a comment, so hosts are stored without a scheme.
+
+ZUNO_DEVELOPMENT_TEAM =
+ZUNO_SUPABASE_HOST =
+ZUNO_SUPABASE_PUBLISHABLE_KEY =
+ZUNO_GOOGLE_IOS_CLIENT_ID =
+ZUNO_OAUTH_REDIRECT_SCHEME = zuno
+ZUNO_PAYHERE_MODE = sandbox
+ZUNO_PAYHERE_RETURN_HOST =
+ZUNO_AI_FUNCTION_NAME = ai-organizer-copilot
+ZUNO_APS_ENVIRONMENT = development

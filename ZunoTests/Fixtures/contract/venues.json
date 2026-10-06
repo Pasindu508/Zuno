@@ -1,0 +1,128 @@
+[
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f01",
+    "name": "Innovation Hall",
+    "address_line": "Galle Road, Colombo 03",
+    "city": "Colombo",
+    "district": "Colombo",
+    "latitude": 6.9022,
+    "longitude": 79.853
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f02",
+    "name": "Engineering Faculty Auditorium",
+    "address_line": "Katubedda",
+    "city": "Moratuwa",
+    "district": "Colombo",
+    "latitude": 6.7951,
+    "longitude": 79.9009
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f03",
+    "name": "Lakeside Pavilion",
+    "address_line": "Sangaraja Mawatha",
+    "city": "Kandy",
+    "district": "Kandy",
+    "latitude": 7.2916,
+    "longitude": 80.6413
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f04",
+    "name": "Fort Ramparts Meeting Point",
+    "address_line": "Church Street, Galle Fort",
+    "city": "Galle",
+    "district": "Galle",
+    "latitude": 6.027,
+    "longitude": 80.217
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f05",
+    "name": "Northern Tech Hub",
+    "address_line": "Hospital Road",
+    "city": "Jaffna",
+    "district": "Jaffna",
+    "latitude": 9.6615,
+    "longitude": 80.0255
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f06",
+    "name": "Garden Amphitheatre",
+    "address_line": "Independence Avenue, Colombo 07",
+    "city": "Colombo",
+    "district": "Colombo",
+    "latitude": 6.9046,
+    "longitude": 79.8686
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f07",
+    "name": "Main Hall, Faculty of Science",
+    "address_line": "Cumaratunga Munidasa Mawatha, Colombo 03",
+    "city": "Colombo",
+    "district": "Colombo",
+    "latitude": 6.9006,
+    "longitude": 79.8607
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f08",
+    "name": "Community Arts Studio",
+    "address_line": "Marine Drive, Wellawatte",
+    "city": "Colombo",
+    "district": "Colombo",
+    "latitude": 6.8741,
+    "longitude": 79.859
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f09",
+    "name": "Beach Park Start Line",
+    "address_line": "Lewis Place",
+    "city": "Negombo",
+    "district": "Gampaha",
+    "latitude": 7.218,
+    "longitude": 79.8399
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f10",
+    "name": "Engineering Workshop Lab",
+    "address_line": "Peradeniya",
+    "city": "Kandy",
+    "district": "Kandy",
+    "latitude": 7.2549,
+    "longitude": 80.5917
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f11",
+    "name": "Old Town Gallery",
+    "address_line": "Horton Place, Colombo 07",
+    "city": "Colombo",
+    "district": "Colombo",
+    "latitude": 6.9113,
+    "longitude": 79.8701
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f12",
+    "name": "Lagoon Front Stage",
+    "address_line": "Bar Road",
+    "city": "Batticaloa",
+    "district": "Batticaloa",
+    "latitude": 7.731,
+    "longitude": 81.6747
+  },
+  {
+    "id": "7a2e0b4f-2d3c-4e6f-9a01-1b2c3d4e5f13",
+    "name": "Sports Complex Nets",
+    "address_line": "Reid Avenue, Colombo 07",
+    "city": "Colombo",
+    "district": "Colombo",
+    "latitude": 6.9008,
+    "longitude": 79.8652
+  },
+  {
+    "id": "278a313e-c607-56f3-84e3-f78a40c2c619",
+    "name": "Innovation Hall",
+    "address_line": "Galle Road, Colombo 03",
+    "city": "Colombo",
+    "district": "Colombo",
+    "latitude": 6.9022,
+    "longitude": 79.853
+  }
+]

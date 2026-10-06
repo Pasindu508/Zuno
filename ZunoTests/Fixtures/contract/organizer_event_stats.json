@@ -1,0 +1,24 @@
+{
+  "status": "published",
+  "by_tier": [
+    {
+      "name": "Participant",
+      "sold": 22,
+      "tier_id": "f1000000-0000-4000-8000-000000000141",
+      "quantity": 60,
+      "reserved": 0,
+      "gross_minor": 0
+    }
+  ],
+  "offered": 0,
+  "capacity": 60,
+  "event_id": "e1000000-0000-4000-8000-000000000014",
+  "net_minor": 0,
+  "checked_in": 0,
+  "waitlisted": 0,
+  "gross_minor": 0,
+  "seats_taken": 22,
+  "tickets_sold": 0,
+  "registrations": 0,
+  "commission_minor": 0
+}

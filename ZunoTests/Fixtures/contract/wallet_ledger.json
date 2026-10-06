@@ -1,0 +1,13 @@
+[
+  {
+    "id": "86f7f82c-b2ad-4967-8000-a2c5cc32047c",
+    "entry_type": "topup",
+    "amount_minor": 14000,
+    "balance_after_minor": 14000,
+    "status": "posted",
+    "reference_type": "seed",
+    "reference_id": null,
+    "description": "LOCAL DEVELOPMENT seed top-up",
+    "created_at": "2026-10-06T15:45:50.244207+00:00"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "month": "2026-10",
+  "reason": null,
+  "currency": "LKR",
+  "fee_minor": 0,
+  "can_register": true,
+  "allowance_used": 13,
+  "allowance_limit": 15,
+  "seats_remaining": 83,
+  "allowance_remaining": 2,
+  "wallet_balance_minor": 14000
+}

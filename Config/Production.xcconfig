@@ -1,0 +1,10 @@
+// Production: release build. Requires real values in Secrets.Production.xcconfig
+// (or CI-provided build settings). The development backend is compiled out.
+#include "Base.xcconfig"
+
+ZUNO_ENVIRONMENT = production
+ZUNO_BUNDLE_ID = lk.zuno.app
+ZUNO_PAYHERE_MODE = live
+ZUNO_APS_ENVIRONMENT = production
+
+#include? "Secrets.Production.xcconfig"

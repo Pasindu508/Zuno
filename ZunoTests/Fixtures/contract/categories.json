@@ -1,0 +1,62 @@
+[
+  {
+    "id": "hackathons",
+    "name": "Hackathons",
+    "symbol_name": "laptopcomputer",
+    "sort_order": 1
+  },
+  {
+    "id": "technology",
+    "name": "Technology",
+    "symbol_name": "cpu",
+    "sort_order": 2
+  },
+  {
+    "id": "workshops",
+    "name": "Workshops",
+    "symbol_name": "hammer",
+    "sort_order": 3
+  },
+  {
+    "id": "university",
+    "name": "University",
+    "symbol_name": "graduationcap",
+    "sort_order": 4
+  },
+  {
+    "id": "art",
+    "name": "Art",
+    "symbol_name": "photo.artframe",
+    "sort_order": 5
+  },
+  {
+    "id": "music",
+    "name": "Music",
+    "symbol_name": "music.note",
+    "sort_order": 6
+  },
+  {
+    "id": "sports",
+    "name": "Sports",
+    "symbol_name": "figure.run",
+    "sort_order": 7
+  },
+  {
+    "id": "culture",
+    "name": "Culture",
+    "symbol_name": "building.columns",
+    "sort_order": 8
+  },
+  {
+    "id": "careers",
+    "name": "Careers",
+    "symbol_name": "briefcase",
+    "sort_order": 9
+  },
+  {
+    "id": "community",
+    "name": "Community",
+    "symbol_name": "person.3",
+    "sort_order": 10
+  }
+]

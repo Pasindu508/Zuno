@@ -1,0 +1,8 @@
+// Test: used by unit and UI tests. Debug build; tests pass launch arguments that
+// select the deterministic development backend so no network access is needed.
+#include "Base.xcconfig"
+
+ZUNO_ENVIRONMENT = test
+ZUNO_BUNDLE_ID = lk.zuno.app.test
+
+#include? "Secrets.Test.xcconfig"

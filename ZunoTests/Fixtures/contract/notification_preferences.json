@@ -1,0 +1,10 @@
+[
+  {
+    "event_reminders": true,
+    "payment_updates": true,
+    "event_changes": true,
+    "waitlist_updates": true,
+    "organizer_news": true,
+    "push_enabled": true
+  }
+]

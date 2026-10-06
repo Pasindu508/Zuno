@@ -1,0 +1,177 @@
+# Zuno iOS — XcodeGen specification.
+# Generate the project with `scripts/generate.sh` (downloads XcodeGen on first run).
+name: Zuno
+
+options:
+  bundleIdPrefix: lk.zuno
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "27.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: false
+  defaultConfig: Development
+
+configs:
+  Development: debug
+  Test: debug
+  Production: release
+
+configFiles:
+  Development: Config/Development.xcconfig
+  Test: Config/Test.xcconfig
+  Production: Config/Production.xcconfig
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    ENABLE_MODULE_VERIFIER: YES
+    DEAD_CODE_STRIPPING: YES
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+    CLANG_ENABLE_OBJC_WEAK: YES
+
+packages:
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    from: 2.55.0
+
+targets:
+  Zuno:
+    type: application
+    platform: iOS
+    sources:
+      - path: Zuno
+        excludes:
+          - "**/.DS_Store"
+      - path: ThirdParty/Licenses
+        buildPhase: resources
+      - path: supabase/seed/zuno_seed.json
+        buildPhase: resources
+    dependencies:
+      - package: Supabase
+        product: Supabase
+    entitlements:
+      path: Zuno/Resources/Zuno.entitlements
+      properties:
+        com.apple.developer.applesignin: [Default]
+        aps-environment: $(ZUNO_APS_ENVIRONMENT)
+    info:
+      path: Zuno/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: Zuno
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, si, ta]
+        CFBundleAllowMixedLocalizations: true
+        ITSAppUsesNonExemptEncryption: false
+        LSRequiresIPhoneOS: true
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UIRequiresFullScreen: false
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+          UIImageName: LaunchWordmark
+          UIImageRespectsSafeAreaInsets: true
+        UIAppFonts: [SansitaOne-Regular.ttf]
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        CFBundleURLTypes:
+          - CFBundleURLName: lk.zuno.callback
+            CFBundleURLSchemes: [zuno]
+        NSFaceIDUsageDescription: Zuno uses Face ID to protect your wallet, tickets and organizer tools when you turn on App Lock.
+        NSCameraUsageDescription: Zuno uses the camera only while you scan attendee tickets at your event.
+        NSCalendarsWriteOnlyAccessUsageDescription: Zuno adds the events you choose to your calendar. It never reads your existing calendar.
+        NSLocationWhenInUseUsageDescription: Zuno uses your location to show events near you. You can choose a city instead.
+        ZunoEnvironment: $(ZUNO_ENVIRONMENT)
+        ZunoSupabaseHost: $(ZUNO_SUPABASE_HOST)
+        ZunoSupabasePublishableKey: $(ZUNO_SUPABASE_PUBLISHABLE_KEY)
+        ZunoOAuthRedirectURL: $(ZUNO_OAUTH_REDIRECT_SCHEME)://auth/callback
+        ZunoGoogleClientID: $(ZUNO_GOOGLE_IOS_CLIENT_ID)
+        ZunoPayHereMode: $(ZUNO_PAYHERE_MODE)
+        ZunoPayHereReturnHost: $(ZUNO_PAYHERE_RETURN_HOST)
+        ZunoAIFunctionName: $(ZUNO_AI_FUNCTION_NAME)
+        ZunoPushEnvironment: $(ZUNO_APS_ENVIRONMENT)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(ZUNO_BUNDLE_ID)
+        PRODUCT_NAME: Zuno
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        DEVELOPMENT_TEAM: $(ZUNO_DEVELOPMENT_TEAM)
+        CODE_SIGN_STYLE: Automatic
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+      configs:
+        Production:
+          # Development fixtures and the in-memory development backend never ship.
+          EXCLUDED_SOURCE_FILE_NAMES: "DevelopmentAssets.xcassets zuno_seed.json"
+
+  ZunoTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: ZunoTests
+    dependencies:
+      - target: Zuno
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: lk.zuno.app.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: $(BUILT_PRODUCTS_DIR)/Zuno.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zuno
+        BUNDLE_LOADER: $(TEST_HOST)
+        DEVELOPMENT_TEAM: $(ZUNO_DEVELOPMENT_TEAM)
+
+  ZunoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: ZunoUITests
+    dependencies:
+      - target: Zuno
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: lk.zuno.app.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: Zuno
+        DEVELOPMENT_TEAM: $(ZUNO_DEVELOPMENT_TEAM)
+
+schemes:
+  Zuno:
+    build:
+      targets:
+        Zuno: all
+        ZunoTests: [test]
+        ZunoUITests: [test]
+    run:
+      config: Development
+    test:
+      config: Test
+      gatherCoverageData: true
+      targets:
+        - name: ZunoTests
+          parallelizable: false
+        - name: ZunoUITests
+          parallelizable: false
+    profile:
+      config: Production
+    analyze:
+      config: Development
+    archive:
+      config: Production

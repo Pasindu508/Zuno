@@ -1,0 +1,8 @@
+// Development: local Supabase or a development project. Debug build with the
+// development backend available when Supabase is not configured.
+#include "Base.xcconfig"
+
+ZUNO_ENVIRONMENT = development
+ZUNO_BUNDLE_ID = lk.zuno.app.dev
+
+#include? "Secrets.Development.xcconfig"

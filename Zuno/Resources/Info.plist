@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Zuno</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>si</string>
+		<string>ta</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>lk.zuno.callback</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>zuno</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCalendarsWriteOnlyAccessUsageDescription</key>
+	<string>Zuno adds the events you choose to your calendar. It never reads your existing calendar.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Zuno uses the camera only while you scan attendee tickets at your event.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Zuno uses Face ID to protect your wallet, tickets and organizer tools when you turn on App Lock.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Zuno uses your location to show events near you. You can choose a city instead.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SansitaOne-Regular.ttf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>LaunchBackground</string>
+		<key>UIImageName</key>
+		<string>LaunchWordmark</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<true/>
+	</dict>
+	<key>UIRequiresFullScreen</key>
+	<false/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>ZunoAIFunctionName</key>
+	<string>$(ZUNO_AI_FUNCTION_NAME)</string>
+	<key>ZunoEnvironment</key>
+	<string>$(ZUNO_ENVIRONMENT)</string>
+	<key>ZunoGoogleClientID</key>
+	<string>$(ZUNO_GOOGLE_IOS_CLIENT_ID)</string>
+	<key>ZunoOAuthRedirectURL</key>
+	<string>$(ZUNO_OAUTH_REDIRECT_SCHEME)://auth/callback</string>
+	<key>ZunoPayHereMode</key>
+	<string>$(ZUNO_PAYHERE_MODE)</string>
+	<key>ZunoPayHereReturnHost</key>
+	<string>$(ZUNO_PAYHERE_RETURN_HOST)</string>
+	<key>ZunoPushEnvironment</key>
+	<string>$(ZUNO_APS_ENVIRONMENT)</string>
+	<key>ZunoSupabaseHost</key>
+	<string>$(ZUNO_SUPABASE_HOST)</string>
+	<key>ZunoSupabasePublishableKey</key>
+	<string>$(ZUNO_SUPABASE_PUBLISHABLE_KEY)</string>
+</dict>
+</plist>
